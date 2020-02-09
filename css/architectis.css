@@ -114,3 +114,12 @@ a {
 .faded {
     color: #aaaaaa;
 }
+
+.flag {
+    width: 30px;
+    margin: 5px;
+}
+.eventMetadata {
+  color: gray;
+  font-size: 80%;
+}
