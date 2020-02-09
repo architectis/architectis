@@ -50,27 +50,22 @@ body {
 .row {
     padding-bottom: 20px;
 }
-h1 {
-    font-weight: bold;
-}
 h2 {
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 h3 {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
 }
 h4 {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
 }
 h5 {
-    font-size: 16px;
-    font-weight: bold;
-}
-h6 {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
 }
 a:hover {
     text-decoration: none;
