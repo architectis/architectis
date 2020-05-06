@@ -410,14 +410,66 @@
 
                 <p>
                     The goal of the course is to give you the knowledge to use the C4 model to describe your own software systems.
-                    The course includes a learning journey through content online, hands-on diagramming exercises that will be reviewed by us,
+                    The course includes a learning journey through online content, hands-on diagramming exercises that will be reviewed by us,
                     a copy of the "Software Architecture for Developers" ebooks, and an electronic completion certificate.
                     Q&A, discussion, and support will be provided via Slack.
                 </p>
 
                 <p>
-                    Pricing is £399 per person. Contact <a href="mailto:hello@architectis.je?subject=Online%20course" target="_blank">hello@architectis.je</a> to register.
+                    Pricing is £399 per person. Contact <a href="mailto:hello@architectis.je?subject=Online%20course" target="_blank">hello@architectis.je</a> to register, or pay via the PayPal button below.
+                    We offer a discount for 5+ people from the same company.
                 </p>
+
+                <br /><br />
+
+                <div style="font-size: 70%">
+                <p>
+                    By participating in the online course, you agree to following ("we/us" refers to <a href="https://architectis.je">Architectis Limited</a>):
+                </p>
+    
+                <ul>
+                    <li>You retain all copyright associated with your exercise submissions, but you grant us the right and license to use this content, for use in the course by us and other participants.</li>
+                    <li>We will anonymise your content before using it, but please do not submit any content that would violate the privacy rights, publicity rights, copyrights, contract rights or any other rights of any person.</li>
+                    <li>We agree not to use your e-mail address for any other purpose than this course, and it will not be shared with other course participants.</li>
+                    <li>Please, be nice to people on Slack (i.e. no harassing behaviour).</li>
+                </ul>
+                </div>
+    
+                <br /><br />
+
+                <p style="font-size: 30px" class="centered">
+                    <b>For a limited time only</b>: £199 per person until 31st May 2020
+
+                    <div id="paypal-button-container" class="centered"></div>
+                </p>
+
+                <script src="https://www.paypal.com/sdk/js?client-id=AU6zy97EhD3ex7bOtoTIyxAtwrsP4ceBXPekdgwu4x3w3iT6vE__Rogsk3YFqQchlxh1Km1Y2-lIhOo8&currency=GBP" data-sdk-integration-source="button-factory"></script>
+                <script>
+                paypal.Buttons({
+                    style: {
+                        shape: 'rect',
+                        color: 'blue',
+                        layout: 'horizontal',
+                        label: 'paypal',
+                        
+                    },
+                    createOrder: function(data, actions) {
+                        return actions.order.create({
+                            purchase_units: [{
+                                amount: {
+                                    value: '199'
+                                }
+                            }]
+                        });
+                    },
+                    onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(details) {
+                            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                        });
+                    }
+                }).render('#paypal-button-container');
+                </script>
+
             </div>
         </div>
 
