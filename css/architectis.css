@@ -12,10 +12,6 @@ body {
     padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
-    color: white;
-}
-#footer a, #footer a:hover {
-    color: white;
 }
 #footer .container {
     font-size: 15px;
